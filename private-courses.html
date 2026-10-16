@@ -14,143 +14,21 @@
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="public-courses.html">Public Courses</a></li>
-      <li><a href="private-courses.html" class="active">Private Courses</a></li>
+      <li><a href="private-courses.html" class="active">Private Clubs</a></li>
       <li><a href="rankings.html">Rankings & Polls</a></li>
       <li><a href="arcade.html">Golf Arcade</a></li>
     </ul>
-    <button class="theme-btn" id="theme-btn">🌙 Mode</button>
+    <button class="theme-btn" id="theme-btn" onclick="toggleDarkMode()">🌙 Mode</button>
   </nav>
 
-  <header class="hero">
-    <div class="hero-badge">EXCLUSIVE VAULT</div>
-    <h1>Top 10 Private Golf Clubs in New Jersey</h1>
-    <p>Explore the architecture and heritage of NJ's most exclusive championship courses.</p>
-  </header>
-
   <main class="container">
-    <div class="courses-grid">
+    <header class="hero">
+      <div class="hero-badge">EXCLUSIVE VAULT</div>
+      <h1>Top 10 Private Golf Clubs</h1>
+      <p>Explore the architecture and heritage of NJ's most exclusive championship courses.</p>
+    </header>
 
-      <!-- 1. Pine Valley -->
-      <div class="card course-card">
-        <div class="image-frame">
-          <img src="https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?w=1000&auto=format&fit=crop" onerror="handleImgError(this)" alt="Pine Valley Golf Club" class="banner-image">
-          <div class="image-tag">📍 Pine Valley, NJ</div>
-        </div>
-        <h2>1. Pine Valley Golf Club</h2>
-        <p><strong>Architect:</strong> George Crump / H.S. Colt | <strong>Rank:</strong> #1 in World</p>
-        <p>Consistently ranked the #1 golf course on planet Earth. Surrounded by unpaved scrub wastes and thick pine forests.</p>
-        <a href="https://www.top100golfcourses.com/golf-course/pine-valley" target="_blank" rel="noopener noreferrer" class="action-btn outline-btn">View Pine Valley Profile ↗</a>
-      </div>
-
-      <!-- 2. Baltusrol Lower -->
-      <div class="card course-card">
-        <div class="image-frame">
-          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1000&auto=format&fit=crop" onerror="handleImgError(this)" alt="Baltusrol Golf Club" class="banner-image">
-          <div class="image-tag">📍 Springfield, NJ</div>
-        </div>
-        <h2>2. Baltusrol Golf Club (Lower Course)</h2>
-        <p><strong>Architect:</strong> A.W. Tillinghast | <strong>Rank:</strong> PGA Major Host</p>
-        <p>A National Historic Landmark layout that has hosted 17 Major Championships, famous for its back-to-back par-5 finish.</p>
-        <a href="https://www.baltusrol.org/" target="_blank" rel="noopener noreferrer" class="action-btn outline-btn">Visit Official Baltusrol Site ↗</a>
-      </div>
-
-      <!-- 3. Somerset Hills -->
-      <div class="card course-card">
-        <div class="image-frame">
-          <img src="https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=1000&auto=format&fit=crop" onerror="handleImgError(this)" alt="Somerset Hills Country Club" class="banner-image">
-          <div class="image-tag">📍 Bernardsville, NJ</div>
-        </div>
-        <h2>3. Somerset Hills Country Club</h2>
-        <p><strong>Architect:</strong> A.W. Tillinghast | <strong>Rank:</strong> Top 50 Worldwide</p>
-        <p>Divided into an open front nine and a dramatic wooded back nine featuring natural water hazards and undulating greens.</p>
-        <a href="https://www.top100golfcourses.com/golf-course/somerset-hills" target="_blank" rel="noopener noreferrer" class="action-btn outline-btn">View Somerset Hills Profile ↗</a>
-      </div>
-
-      <!-- 4. Plainfield -->
-      <div class="card course-card">
-        <div class="image-frame">
-          <img src="https://images.unsplash.com/photo-1592919505780-303950717480?w=1000&auto=format&fit=crop" onerror="handleImgError(this)" alt="Plainfield Country Club" class="banner-image">
-          <div class="image-tag">📍 Edison, NJ</div>
-        </div>
-        <h2>4. Plainfield Country Club</h2>
-        <p><strong>Architect:</strong> Donald Ross | <strong>Rank:</strong> PGA Tour Host</p>
-        <p>A masterclass in Donald Ross green complex design. Frequently hosts PGA Tour FedExCup playoff events.</p>
-        <a href="https://www.plainfieldcc.com/" target="_blank" rel="noopener noreferrer" class="action-btn outline-btn">Visit Plainfield Official Site ↗</a>
-      </div>
-
-      <!-- 5. Ridgewood -->
-      <div class="card course-card">
-        <div class="image-frame">
-          <img src="https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=1000&auto=format&fit=crop" onerror="handleImgError(this)" alt="Ridgewood Country Club" class="banner-image">
-          <div class="image-tag">📍 Paramus, NJ</div>
-        </div>
-        <h2>5. Ridgewood Country Club</h2>
-        <p><strong>Architect:</strong> A.W. Tillinghast | <strong>Rank:</strong> 27-Hole Classic</p>
-        <p>Features three nine-hole loops anchored by a iconic French Normandy-style clubhouse built in 1929.</p>
-        <a href="https://www.ridgewoodcc.org/" target="_blank" rel="noopener noreferrer" class="action-btn outline-btn">Visit Ridgewood Official Site ↗</a>
-      </div>
-
-      <!-- 6. Baltusrol Upper -->
-      <div class="card course-card">
-        <div class="image-frame">
-          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1000&auto=format&fit=crop" onerror="handleImgError(this)" alt="Baltusrol Upper Course" class="banner-image">
-          <div class="image-tag">📍 Springfield, NJ</div>
-        </div>
-        <h2>6. Baltusrol Golf Club (Upper Course)</h2>
-        <p><strong>Architect:</strong> A.W. Tillinghast | <strong>Rank:</strong> Major Host</p>
-        <p>Built along the side of Baltusrol Mountain, offering steeper elevation shifts than the adjacent Lower Course.</p>
-        <a href="https://www.baltusrol.org/" target="_blank" rel="noopener noreferrer" class="action-btn outline-btn">Visit Official Baltusrol Site ↗</a>
-      </div>
-
-      <!-- 7. Hollywood -->
-      <div class="card course-card">
-        <div class="image-frame">
-          <img src="https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?w=1000&auto=format&fit=crop" onerror="handleImgError(this)" alt="Hollywood Golf Club" class="banner-image">
-          <div class="image-tag">📍 Deal, NJ</div>
-        </div>
-        <h2>7. Hollywood Golf Club</h2>
-        <p><strong>Architect:</strong> Walter Travis | <strong>Rank:</strong> Jersey Shore Classic</p>
-        <p>Renowned for its expansive bunker complexes and subtle green slopes located just blocks from the Atlantic Ocean.</p>
-        <a href="https://www.hollywoodgolfclub.org/" target="_blank" rel="noopener noreferrer" class="action-btn outline-btn">Visit Hollywood Official Site ↗</a>
-      </div>
-
-      <!-- 8. Bayonne -->
-      <div class="card course-card">
-        <div class="image-frame">
-          <img src="https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=1000&auto=format&fit=crop" onerror="handleImgError(this)" alt="Bayonne Golf Club" class="banner-image">
-          <div class="image-tag">📍 Bayonne, NJ</div>
-        </div>
-        <h2>8. Bayonne Golf Club</h2>
-        <p><strong>Architect:</strong> Eric Bergstol | <strong>Rank:</strong> Harbor Links</p>
-        <p>A staggering engineering marvel built on New York Harbor with 90-foot dunes and panoramic NYC skyline views.</p>
-        <a href="http://www.bayonnegolfclub.com/" target="_blank" rel="noopener noreferrer" class="action-btn outline-btn">Visit Bayonne Official Site ↗</a>
-      </div>
-
-      <!-- 9. Galloway National -->
-      <div class="card course-card">
-        <div class="image-frame">
-          <img src="https://images.unsplash.com/photo-1592919505780-303950717480?w=1000&auto=format&fit=crop" onerror="handleImgError(this)" alt="Galloway National Golf Club" class="banner-image">
-          <div class="image-tag">📍 Galloway, NJ</div>
-        </div>
-        <h2>9. Galloway National Golf Club</h2>
-        <p><strong>Architect:</strong> Tom Fazio | <strong>Rank:</strong> Bayside Jewel</p>
-        <p>A heavily wooded, pristine layout crafted along Reeds Bay with views of the Atlantic City skyline.</p>
-        <a href="https://www.gallowaynationalgolfclub.org/" target="_blank" rel="noopener noreferrer" class="action-btn outline-btn">Visit Galloway Official Site ↗</a>
-      </div>
-
-      <!-- 10. Liberty National -->
-      <div class="card course-card">
-        <div class="image-frame">
-          <img src="https://images.unsplash.com/photo-1593111774601-dfbce72a500f?w=1000&auto=format&fit=crop" onerror="handleImgError(this)" alt="Liberty National Golf Club" class="banner-image">
-          <div class="image-tag">📍 Jersey City, NJ</div>
-        </div>
-        <h2>10. Liberty National Golf Club</h2>
-        <p><strong>Architect:</strong> Tom Kite / Bob Cupp | <strong>Rank:</strong> Presidents Cup Host</p>
-        <p>An iconic waterfront club located right across from Lady Liberty and Manhattan, host to multiple PGA Tour events.</p>
-        <a href="https://www.libertynationalgc.com/" target="_blank" rel="noopener noreferrer" class="action-btn outline-btn">Visit Liberty National Site ↗</a>
-      </div>
-
-    </div>
+    <div id="private-courses-list"></div>
   </main>
 
   <script src="script.js"></script>
