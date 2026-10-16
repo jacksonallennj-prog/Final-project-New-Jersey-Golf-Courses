@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NJ Golf Hub | Public Courses</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">⛳ NJ GOLF HUB</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="public-courses.html" class="active">Public Courses</a></li>
+      <li><a href="private-courses.html">Private Courses</a></li>
+      <li><a href="rankings.html">Rankings & Polls</a></li>
+      <li><a href="arcade.html">Golf Arcade</a></li>
+    </ul>
+    <button class="theme-btn" id="theme-btn">🌙 Mode</button>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-badge">PUBLIC DIRECTORY</div>
+    <h1>Top 10 Public Golf Courses in New Jersey</h1>
+    <p>Book tee times directly at the highest-rated public courses in the state.</p>
+  </header>
+
+  <main class="container">
+    <div class="courses-grid">
+
+      <!-- 1. Ballyowen -->
+      <div class="card course-card">
+        <div class="image-frame">
+          <img src="https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=1000&auto=format&fit=crop" onerror="handleImgError(this)" alt="Ballyowen Golf Club" class="banner-image">
+          <div class="image-tag">📍 Hamburg, NJ</div>
+        </div>
+        <h2>1. Ballyowen Golf Club</h2>
+        <p><strong>Architect:</strong> Roger Rulewich | <strong>Style:</strong> Celtic Links</p>
+        <p>Consistently rated NJ's #1 public course. Set on a 250-acre plateau with open meadows and countryside views.</p>
+        <a href="https://www.crystalgolfresort.com/golf/courses/ballyowen" target="_blank" rel="noopener noreferrer" class="action-btn glow-btn">Book Tee Time at Ballyowen ↗</a>
+      </div>
+
+      <!-- 2. Neshanic Valley -->
+      <div class="card course-card">
+        <div class="image-frame">
+          <img src="https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?w=1000&auto=format&fit=crop" onerror="handleImgError(this)" alt="Neshanic Valley Golf Course" class="banner-image">
+          <div class="image-tag">📍 Neshanic Station, NJ</div>
+        </div>
+        <h2>2. Neshanic Valley Golf Course</h2>
+        <p><strong>Architect:</strong> Michael Hurdzan | <strong>Style:</strong> Championship Municipal</p>
+        <p>The flagship 27-hole facility of Somerset County. Offers pristine conditioning and fairways carved through rolling farmland.</p>
+        <a href="https://www.neshanicvalleygolf.com/" target="_blank" rel="noopener noreferrer" class="action-btn glow-btn">Book Tee Time at Neshanic Valley ↗</a>
+      </div>
+
+      <!-- 3. Seaview - Bay Course -->
+      <div class="card course-card">
+        <div class="image-frame">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1000&auto=format&fit=crop" onerror="handleImgError(this)" alt="Seaview Golf Club Bay Course" class="banner-image">
+          <div class="image-tag">📍 Galloway, NJ</div>
+        </div>
+        <h2>3. Seaview Golf Club (Bay Course)</h2>
+        <p><strong>Architect:</strong> Donald Ross | <strong>Style:</strong> Historic Ocean Links</p>
+        <p>Historic 1914 seaside layout situated right on Reed's Bay. Host venue for the LPGA ShopRite Classic.</p>
+        <a href="https://www.seaviewgolf.com/" target="_blank" rel="noopener noreferrer" class="action-btn glow-btn">Book Tee Time at Seaview ↗</a>
+      </div>
+
+      <!-- 4. Twisted Dune -->
+      <div class="card course-card">
+        <div class="image-frame">
+          <img src="https://images.unsplash.com/photo-1592919505780-303950717480?w=1000&auto=format&fit=crop" onerror="handleImgError(this)" alt="Twisted Dune Golf Club" class="banner-image">
+          <div class="image-tag">📍 Egg Harbor Township, NJ</div>
+        </div>
+        <h2>4. Twisted Dune Golf Club</h2>
+        <p><strong>Architect:</strong> Archie Struthers | <strong>Style:</strong> Inland Scottish Links</p>
+        <p>Built by sculpting over 2 million cubic yards of earth into 70-foot dunes, deep ravines, and massive waste bunkers.</p>
+        <a href="https://www.twisteddune.com/" target="_blank" rel="noopener noreferrer" class="action-btn glow-btn">Book Tee Time at Twisted Dune ↗</a>
+      </div>
+
+      <!-- 5. Atlantic City Country Club -->
+      <div class="card course-card">
+        <div class="image-frame">
+          <img src="https://images.unsplash.com/photo-1593111774601-dfbce72a500f?w=1000&auto=format&fit=crop" onerror="handleImgError(this)" alt="Atlantic City Country Club" class="banner-image">
+          <div class="image-tag">📍 Northfield, NJ</div>
+        </div>
+        <h2>5. Atlantic City Country Club</h2>
+        <p><strong>Architect:</strong> John Reid | <strong>Style:</strong> Historic Tidal Links</p>
+        <p>Known as the "Birthplace of the Birdie." Founded in 1897, featuring tidal marsh views and skyline vistas of Atlantic City.</p>
+        <a href="https://account.ablegolf.com/book/ac-country-club/" target="_blank" rel="noopener noreferrer" class="action-btn glow-btn">Book Tee Time at ACCC ↗</a>
+      </div>
+
+      <!-- 6. Architects Golf Club -->
+      <div class="card course-card">
+        <div class="image-frame">
+          <img src="https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=1000&auto=format&fit=crop" onerror="handleImgError(this)" alt="Architects Golf Club" class="banner-image">
+          <div class="image-tag">📍 Lopatcong, NJ</div>
+        </div>
+        <h2>6. The Architects Golf Club</h2>
+        <p><strong>Architect:</strong> Stephen Kay | <strong>Style:</strong> Historical Homage</p>
+        <p>A unique layout where every hole pays tribute to a famous golf architect, spanning 70 years of design history.</p>
+        <a href="https://www.thearchitectsgolfclub.com/" target="_blank" rel="noopener noreferrer" class="action-btn glow-btn">Book Tee Time at Architects ↗</a>
+      </div>
+
+      <!-- 7. Heron Glen -->
+      <div class="card course-card">
+        <div class="image-frame">
+          <img src="https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?w=1000&auto=format&fit=crop" onerror="handleImgError(this)" alt="Heron Glen Golf Course" class="banner-image">
+          <div class="image-tag">📍 Ringoes, NJ</div>
+        </div>
+        <h2>7. Heron Glen Golf Course</h2>
+        <p><strong>Architect:</strong> Daniel Schlegel | <strong>Style:</strong> Country Parkland</p>
+        <p>A premier Hunterdon County facility offering bentgrass fairways and smooth, fast green complexes.</p>
+        <a href="https://www.heronglen.com/" target="_blank" rel="noopener noreferrer" class="action-btn glow-btn">Book Tee Time at Heron Glen ↗</a>
+      </div>
+
+      <!-- 8. Berkshire Valley -->
+      <div class="card course-card">
+        <div class="image-frame">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1000&auto=format&fit=crop" onerror="handleImgError(this)" alt="Berkshire Valley Golf Course" class="banner-image">
+          <div class="image-tag">📍 Oak Ridge, NJ</div>
+        </div>
+        <h2>8. Berkshire Valley Golf Course</h2>
+        <p><strong>Architect:</strong> Robert McNeil | <strong>Style:</strong> Mountain Course</p>
+        <p>Set high in the Green Pond Mountain ridge with dramatic elevation changes and wilderness terrain.</p>
+        <a href="https://www.morriscountyparks.net/golf/berkshire-valley/" target="_blank" rel="noopener noreferrer" class="action-btn glow-btn">Book Tee Time at Berkshire Valley ↗</a>
+      </div>
+
+      <!-- 9. Hominy Hill -->
+      <div class="card course-card">
+        <div class="image-frame">
+          <img src="https://images.unsplash.com/photo-1592919505780-303950717480?w=1000&auto=format&fit=crop" onerror="handleImgError(this)" alt="Hominy Hill Golf Course" class="banner-image">
+          <div class="image-tag">📍 Colts Neck, NJ</div>
+        </div>
+        <h2>9. Hominy Hill Golf Course</h2>
+        <p><strong>Architect:</strong> Robert Trent Jones Sr. | <strong>Style:</strong> Classic Parkland</p>
+        <p>The crown jewel of Monmouth County's park system. Has hosted two U.S. Amateur Public Links Championships.</p>
+        <a href="https://www.monmouthcountyparks.com/page.aspx?iD=2528" target="_blank" rel="noopener noreferrer" class="action-btn glow-btn">Book Tee Time at Hominy Hill ↗</a>
+      </div>
+
+      <!-- 10. McCullough's Emerald Golf Links -->
+      <div class="card course-card">
+        <div class="image-frame">
+          <img src="https://images.unsplash.com/photo-1593111774601-dfbce72a500f?w=1000&auto=format&fit=crop" onerror="handleImgError(this)" alt="McCulloughs Emerald Golf Links" class="banner-image">
+          <div class="image-tag">📍 Egg Harbor Township, NJ</div>
+        </div>
+        <h2>10. McCullough's Emerald Golf Links</h2>
+        <p><strong>Architect:</strong> Stephen Kay | <strong>Style:</strong> Replicated British Links</p>
+        <p>Tribute layout featuring hole designs inspired by famous Scottish and Irish holes, including the Postcard at Troon.</p>
+        <a href="https://www.mcculloughsgolf.com/" target="_blank" rel="noopener noreferrer" class="action-btn glow-btn">Book Tee Time at McCullough's ↗</a>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
