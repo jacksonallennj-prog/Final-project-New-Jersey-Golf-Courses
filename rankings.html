@@ -14,31 +14,30 @@
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="public-courses.html">Public Courses</a></li>
-      <li><a href="private-courses.html">Private Courses</a></li>
+      <li><a href="private-courses.html">Private Clubs</a></li>
       <li><a href="rankings.html" class="active">Rankings & Polls</a></li>
       <li><a href="arcade.html">Golf Arcade</a></li>
     </ul>
-    <button class="theme-btn" id="theme-btn">🌙 Mode</button>
+    <button class="theme-btn" id="theme-btn" onclick="toggleDarkMode()">🌙 Mode</button>
   </nav>
 
-  <header class="hero">
-    <div class="hero-badge">COMMUNITY LEADERBOARDS</div>
-    <h1>Official Rankings & Custom Polls</h1>
-    <p>Review the rankings, vote on community sentiment, or submit your favorite NJ track!</p>
-  </header>
-
   <main class="container">
-    
+    <header class="hero">
+      <div class="hero-badge">COMMUNITY LEADERBOARDS</div>
+      <h1>Rankings, Polls & Smart Caddie</h1>
+      <p>Vote in community polls or calculate your remaining distance to the pin.</p>
+    </header>
+
     <div class="grid-2col">
       <div class="card">
         <h2>🔒 Top 10 Private Leaderboard</h2>
-        <ol class="ranked-list">
+        <ol style="padding-left: 20px;">
           <li>Pine Valley Golf Club</li>
-          <li>Baltusrol (Lower)</li>
+          <li>Baltusrol (Lower Course)</li>
           <li>Somerset Hills Country Club</li>
           <li>Plainfield Country Club</li>
           <li>Ridgewood Country Club</li>
-          <li>Baltusrol (Upper)</li>
+          <li>Baltusrol (Upper Course)</li>
           <li>Hollywood Golf Club</li>
           <li>Bayonne Golf Club</li>
           <li>Galloway National</li>
@@ -48,7 +47,7 @@
 
       <div class="card">
         <h2>⛳ Top 10 Public Leaderboard</h2>
-        <ol class="ranked-list">
+        <ol style="padding-left: 20px;">
           <li>Ballyowen Golf Club</li>
           <li>Neshanic Valley</li>
           <li>Seaview (Bay Course)</li>
@@ -68,8 +67,8 @@
       <h2>📊 Poll #1: Do you agree with these rankings?</h2>
       <p>Cast your vote on our Garden State Leaderboards:</p>
       <div class="poll-buttons">
-        <button class="action-btn glow-btn" id="poll1-yes">👍 Yes, Spot On!</button>
-        <button class="action-btn outline-btn" id="poll1-no">👎 No, Needs Tweaking</button>
+        <button class="action-btn glow-btn" onclick="votePoll1(true)">👍 Yes, Spot On!</button>
+        <button class="action-btn outline-btn" onclick="votePoll1(false)">👎 No, Needs Tweaking</button>
       </div>
       <div id="poll1-result" class="status-box" style="display:none;"></div>
     </div>
@@ -77,25 +76,21 @@
     <!-- Poll 2 -->
     <div class="card">
       <h2>📝 Poll #2: Submit Your Favorite NJ Course</h2>
-      <div class="input-group">
-        <label for="fav-course-input">Type your #1 favorite golf course in New Jersey:</label>
+      <div style="margin-top: 10px;">
         <input type="text" id="fav-course-input" placeholder="e.g. Twisted Dune" class="modern-input">
+        <button class="action-btn glow-btn" onclick="submitFavoriteCourse()" style="margin-left: 10px;">Submit</button>
       </div>
-      <button class="action-btn glow-btn" id="submit-fav-btn" style="margin-top: 15px;">Submit My Favorite</button>
       <div id="poll2-result" class="status-box" style="display:none;"></div>
     </div>
 
-    <!-- Smart Caddie Engine -->
+    <!-- Smart Caddie -->
     <div class="card">
       <h2>🧠 Smart Caddie Yardage Selector</h2>
-      <p style="margin-bottom: 15px;">Enter your remaining distance to the pin:</p>
-      <div class="input-group">
-        <input type="number" id="user-input" placeholder="e.g. 150" class="modern-input">
-      </div>
-      <button class="action-btn glow-btn" id="submit-btn" style="margin-top: 15px;">Calculate Recommendation</button>
-      <p id="display-text" class="status-box">Your caddie recommendation will display here...</p>
+      <p>Enter your distance to the pin:</p>
+      <input type="number" id="user-input" placeholder="e.g. 150" class="modern-input">
+      <button class="action-btn glow-btn" onclick="calculateClub()" style="margin-left: 10px;">Calculate Club</button>
+      <div id="display-text" class="status-box">Your caddie recommendation will display here...</div>
     </div>
-
   </main>
 
   <script src="script.js"></script>
