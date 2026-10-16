@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NJ Golf Hub | Rankings & Polls</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">⛳ NJ GOLF HUB</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="public-courses.html">Public Courses</a></li>
+      <li><a href="private-courses.html">Private Courses</a></li>
+      <li><a href="rankings.html" class="active">Rankings & Polls</a></li>
+      <li><a href="arcade.html">Golf Arcade</a></li>
+    </ul>
+    <button class="theme-btn" id="theme-btn">🌙 Mode</button>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-badge">COMMUNITY LEADERBOARDS</div>
+    <h1>Official Rankings & Custom Polls</h1>
+    <p>Review the rankings, vote on community sentiment, or submit your favorite NJ track!</p>
+  </header>
+
+  <main class="container">
+    
+    <div class="grid-2col">
+      <div class="card">
+        <h2>🔒 Top 10 Private Leaderboard</h2>
+        <ol class="ranked-list">
+          <li>Pine Valley Golf Club</li>
+          <li>Baltusrol (Lower)</li>
+          <li>Somerset Hills Country Club</li>
+          <li>Plainfield Country Club</li>
+          <li>Ridgewood Country Club</li>
+          <li>Baltusrol (Upper)</li>
+          <li>Hollywood Golf Club</li>
+          <li>Bayonne Golf Club</li>
+          <li>Galloway National</li>
+          <li>Liberty National</li>
+        </ol>
+      </div>
+
+      <div class="card">
+        <h2>⛳ Top 10 Public Leaderboard</h2>
+        <ol class="ranked-list">
+          <li>Ballyowen Golf Club</li>
+          <li>Neshanic Valley</li>
+          <li>Seaview (Bay Course)</li>
+          <li>Twisted Dune Golf Club</li>
+          <li>Atlantic City Country Club</li>
+          <li>Architects Golf Club</li>
+          <li>Heron Glen Golf Course</li>
+          <li>Berkshire Valley</li>
+          <li>Hominy Hill Golf Course</li>
+          <li>McCullough's Emerald Links</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Poll 1 -->
+    <div class="card">
+      <h2>📊 Poll #1: Do you agree with these rankings?</h2>
+      <p>Cast your vote on our Garden State Leaderboards:</p>
+      <div class="poll-buttons">
+        <button class="action-btn glow-btn" id="poll1-yes">👍 Yes, Spot On!</button>
+        <button class="action-btn outline-btn" id="poll1-no">👎 No, Needs Tweaking</button>
+      </div>
+      <div id="poll1-result" class="status-box" style="display:none;"></div>
+    </div>
+
+    <!-- Poll 2 -->
+    <div class="card">
+      <h2>📝 Poll #2: Submit Your Favorite NJ Course</h2>
+      <div class="input-group">
+        <label for="fav-course-input">Type your #1 favorite golf course in New Jersey:</label>
+        <input type="text" id="fav-course-input" placeholder="e.g. Twisted Dune" class="modern-input">
+      </div>
+      <button class="action-btn glow-btn" id="submit-fav-btn" style="margin-top: 15px;">Submit My Favorite</button>
+      <div id="poll2-result" class="status-box" style="display:none;"></div>
+    </div>
+
+    <!-- Smart Caddie Engine -->
+    <div class="card">
+      <h2>🧠 Smart Caddie Yardage Selector</h2>
+      <p style="margin-bottom: 15px;">Enter your remaining distance to the pin:</p>
+      <div class="input-group">
+        <input type="number" id="user-input" placeholder="e.g. 150" class="modern-input">
+      </div>
+      <button class="action-btn glow-btn" id="submit-btn" style="margin-top: 15px;">Calculate Recommendation</button>
+      <p id="display-text" class="status-box">Your caddie recommendation will display here...</p>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
