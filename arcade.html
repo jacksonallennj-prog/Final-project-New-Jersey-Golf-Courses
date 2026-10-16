@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NJ Golf Hub | Golf Arcade</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">⛳ NJ GOLF HUB</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="public-courses.html">Public Courses</a></li>
+      <li><a href="private-courses.html">Private Courses</a></li>
+      <li><a href="rankings.html">Rankings & Polls</a></li>
+      <li><a href="arcade.html" class="active">Golf Arcade</a></li>
+    </ul>
+    <button class="theme-btn" id="theme-btn">🌙 Mode</button>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-badge">INTERACTIVE ARCADE</div>
+    <h1>HTML5 Canvas Golf Games</h1>
+    <p>Test your power on the 2D launch simulator or practice precision putting!</p>
+  </header>
+
+  <main class="container">
+    
+    <!-- Game 1 -->
+    <div class="card game-card">
+      <h2>🏌️ Game #1: 2D Driving Range Launch Simulator</h2>
+      <p>Click <strong>SWING CLUB</strong> to launch your ball down the fairway toward target flags!</p>
+
+      <div class="game-hud">
+        <div class="hud-item">
+          <span class="hud-label">LAST DRIVE</span>
+          <span class="hud-value" id="drive-dist">0 YDS</span>
+        </div>
+        <div class="hud-item">
+          <span class="hud-label">TOTAL SCORE</span>
+          <span class="hud-value" id="game-score">0</span>
+        </div>
+      </div>
+
+      <div class="canvas-wrapper">
+        <canvas id="golf-canvas" width="500" height="320"></canvas>
+      </div>
+
+      <button class="action-btn glow-btn swing-btn-large" id="swing-btn">⛳ SWING CLUB!</button>
+    </div>
+
+    <!-- Game 2 -->
+    <div class="card game-card">
+      <h2>🎯 Game #2: Pin Collector Putting Challenge</h2>
+      <p>Move your mouse (golf ball) over the target pin to sink putts and score points!</p>
+
+      <div class="game-hud">
+        <div class="hud-item">
+          <span class="hud-label">PINS COLLECTED</span>
+          <span class="hud-value" id="putter-score">0</span>
+        </div>
+      </div>
+
+      <div class="canvas-wrapper">
+        <canvas id="putting-canvas" width="500" height="240"></canvas>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
