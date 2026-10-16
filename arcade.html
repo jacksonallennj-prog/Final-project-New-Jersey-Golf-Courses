@@ -14,25 +14,24 @@
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="public-courses.html">Public Courses</a></li>
-      <li><a href="private-courses.html">Private Courses</a></li>
+      <li><a href="private-courses.html">Private Clubs</a></li>
       <li><a href="rankings.html">Rankings & Polls</a></li>
       <li><a href="arcade.html" class="active">Golf Arcade</a></li>
     </ul>
-    <button class="theme-btn" id="theme-btn">🌙 Mode</button>
+    <button class="theme-btn" id="theme-btn" onclick="toggleDarkMode()">🌙 Mode</button>
   </nav>
 
-  <header class="hero">
-    <div class="hero-badge">INTERACTIVE ARCADE</div>
-    <h1>HTML5 Canvas Golf Games</h1>
-    <p>Test your power on the 2D launch simulator or practice precision putting!</p>
-  </header>
-
   <main class="container">
-    
+    <header class="hero">
+      <div class="hero-badge">INTERACTIVE ARCADE</div>
+      <h1>HTML5 Canvas Golf Games</h1>
+      <p>Test your power on the 2D launch simulator or practice precision putting!</p>
+    </header>
+
     <!-- Game 1 -->
-    <div class="card game-card">
+    <div class="card">
       <h2>🏌️ Game #1: 2D Driving Range Launch Simulator</h2>
-      <p>Click <strong>SWING CLUB</strong> to launch your ball down the fairway toward target flags!</p>
+      <p>Click <strong>SWING CLUB</strong> to launch your ball down the fairway towards target flags!</p>
 
       <div class="game-hud">
         <div class="hud-item">
@@ -46,14 +45,14 @@
       </div>
 
       <div class="canvas-wrapper">
-        <canvas id="golf-canvas" width="500" height="320"></canvas>
+        <canvas id="golf-canvas" width="500" height="280"></canvas>
       </div>
 
-      <button class="action-btn glow-btn swing-btn-large" id="swing-btn">⛳ SWING CLUB!</button>
+      <button class="action-btn glow-btn" style="width:100%; padding: 14px;" onclick="swingClub()">⛳ SWING CLUB!</button>
     </div>
 
     <!-- Game 2 -->
-    <div class="card game-card">
+    <div class="card">
       <h2>🎯 Game #2: Pin Collector Putting Challenge</h2>
       <p>Move your mouse (golf ball) over the target pin to sink putts and score points!</p>
 
@@ -65,10 +64,9 @@
       </div>
 
       <div class="canvas-wrapper">
-        <canvas id="putting-canvas" width="500" height="240"></canvas>
+        <canvas id="putting-canvas" width="500" height="220"></canvas>
       </div>
     </div>
-
   </main>
 
   <script src="script.js"></script>
