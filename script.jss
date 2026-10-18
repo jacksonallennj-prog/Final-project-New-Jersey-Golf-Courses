@@ -64,7 +64,7 @@ function toggleDarkMode() {
   document.body.classList.toggle("light-mode");
 }
 
-// Confetti Effecs
+// Confetti Effect
 function fireConfetti() {
   if (typeof confetti === "function") {
     confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
@@ -102,7 +102,7 @@ function submitFavoriteCourse() {
   input.value = "";
 }
 
-// Smart Caddie Calculation
+// Smart Caddie Calculations
 function calculateClub() {
   const input = document.getElementById("user-input");
   const display = document.getElementById("display-text");
