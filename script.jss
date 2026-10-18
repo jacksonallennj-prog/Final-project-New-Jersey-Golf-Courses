@@ -64,7 +64,7 @@ function toggleDarkMode() {
   document.body.classList.toggle("light-mode");
 }
 
-// Confetti Effect
+// Confetti Effecs
 function fireConfetti() {
   if (typeof confetti === "function") {
     confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
